@@ -20,7 +20,7 @@ If you find this data useful in your research, please consider citing:
 ## Crowdsourcing Templates
 The following crowdsourcing templates have been used in the aforementioned article. We use the same experiment notation as in the article. To check each crowdsourcing annotation template, click on the small template icon. The image will open in a new tab.
 
-| EXPERIMENT TYPE| EXPERIMENT SETTING | CROWDSOURCING ANNOTATION TEMPLATE (click to enlarge) | CROWDSOURCING RELEVANCE ANNOTATION SCALE | DOCUMENT GRANULARITY | DOCUMENT PARAGRAPH ORDER | TARGET ANNOTATION |                
+| EXP. TYPE| EXP. SETTING | CROWDSOURCING ANNOTATION TEMPLATE (click to enlarge) | CROWDSOURCING RELEVANCE ANNOTATION SCALE | DOCUMENT GRANULARITY | DOCUMENT PARAGRAPH ORDER | TARGET ANNOTATION |                
 |:---:|:----------:|:--------:|:---------------------------:|:--------------------:|:------------------------:|:----------:|
 | Pilot |   3P-Doc-NoHigh  | ![Fig.1: Pilot 3P-Doc-NoHigh.](https://raw.githubusercontent.com/CrowdTruth/NYT-Crowdsourcing-Topical-Relevance/master/templates/Pilot-3P-Doc-NoHigh.png)| 3-point scale (Highly Relevant, Relevant, Not Relevant) |    Full  Document    |             N\A            |          Relevance Value         |
 |Pilot|    3P-Doc-High   | ![Fig.1: Pilot 3P-Doc-High.](https://raw.githubusercontent.com/CrowdTruth/NYT-Crowdsourcing-Topical-Relevance/master/templates/Pilot-3P-Doc-High.png) |  3-point scale (Highly Relevant,Relevant, Not Relevant) |    Full  Document    |             N\A            | Relevance Value + Text Highlight |

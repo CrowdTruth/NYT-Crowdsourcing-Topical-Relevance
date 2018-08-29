@@ -17,6 +17,13 @@ If you find this data useful in your research, please consider citing:
 }
 ```
 
+## Running the notebooks
+
+To run and regenerate the results, you need to install the stable version of the **crowdtruth==2.0** package from PyPI using:
+```
+pip install crowdtruth==2.0
+```
+
 ## Crowdsourcing Templates
 The following crowdsourcing templates have been used in the aforementioned article. We use the same experiment notation as in the article. To check each crowdsourcing annotation template, click on the small template icon. The image will open in a new tab.
 

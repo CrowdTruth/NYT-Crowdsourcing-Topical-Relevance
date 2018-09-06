@@ -11,6 +11,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats.stats import spearmanr
 
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
 similarity = pd.read_csv("aggregated_similarity.csv")
 gt = pd.read_csv("../ground_truth_data/reviewers_pilot_aggregated_judgments.csv")
 random_highlight = pd.read_csv("../Results/Pilot_2P-RndPar-High/units_Pilot_2P-RndPar-High.csv")

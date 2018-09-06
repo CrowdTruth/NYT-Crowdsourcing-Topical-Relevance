@@ -19,6 +19,9 @@ def variance(scores, value):
     return final_variance
 
 
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
 result_folder = "../Results/Pilot_2P-OrdPar-NoHigh/"
 result_file = "units_Pilot_2P-OrdPar-NoHigh.csv"
 
@@ -49,7 +52,7 @@ gt = pd.read_csv("../ground_truth_data/reviewers_pilot_aggregated_judgments.csv"
 wohpr = pd.read_csv(result_folder + result_file)
 
 
-wohpr = wohpr[wohpr["reviewers_rel"] == 0]
+wohpr = wohpr[wohpr["reviewers_rel"] != 0]
 
 for i in range(0, len(wohpr.index)):
     passages = wohpr['unit_annotation_score'].iloc[i]
@@ -62,8 +65,8 @@ for i in range(0, len(wohpr.index)):
             dict_passages_all_votes[pair[0]].append(float(pair[1]))
           
 for item in dict_passages_all_votes:
-    if (len(dict_passages_all_votes[item]) != dict_passages_counts_nr[item]):
-        for i in range(len(dict_passages_all_votes[item]), dict_passages_counts_nr[item]):
+    if (len(dict_passages_all_votes[item]) != dict_passages_counts_r[item]):
+        for i in range(len(dict_passages_all_votes[item]), dict_passages_counts_r[item]):
             dict_passages_all_votes[item].append(float(0.0))
  
 
@@ -93,7 +96,7 @@ ax1.set_xlabel('paragraph index (position in document)', fontsize=17)
 ax1.set_ylim(0.0, 1.1)
 
 fig.tight_layout()
-plt.savefig("../Plots/passages_owohighlight_medians_nr.eps",format='eps', dpi=1000)
+plt.savefig("../Plots/passages_owohighlight_medians_r.eps",format='eps', dpi=1000)
 plt.show()
 plt.close()
 

@@ -9,6 +9,7 @@ Created on Tue Jan 16 16:41:55 2018
 import pandas as pd
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
+
 import numpy as np
 import itertools
 
@@ -47,6 +48,9 @@ class_names = ['Highly Relevant', 'Relevant', 'Not Relevant']
 cnf_matrix = confusion_matrix(y_test, y_pred, labels=[2,1,0])
 
 np.set_printoptions(precision=2)
+
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
 
 # Plot non-normalized confusion matrix
 plt.figure()

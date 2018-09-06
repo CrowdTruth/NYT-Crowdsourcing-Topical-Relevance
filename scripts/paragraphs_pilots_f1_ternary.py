@@ -8,9 +8,14 @@ Created on Fri Jan 19 20:56:51 2018
 
 import pandas as pd
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from mpl_toolkits.mplot3d import Axes3D
+
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+matplotlib.rcParams['text.latex.unicode']=True
 
 def compute_F1_score_highly_relevant(dataset):
     nyt_f1 = np.zeros(shape=(100, 3))
@@ -154,7 +159,7 @@ ax.view_init(6, 30)
 
 fig.tight_layout()
 bbox = fig.bbox_inches.from_bounds(0.12, 0.22, 5, 3.8)
-plt.savefig("../Plots/random_highlight_3values.png" , bbox_inches=bbox, format="png")
+plt.savefig("../Plots/random_highlight_3values.eps", bbox_inches=bbox, format="eps")
 plt.show()
 plt.close()
 
@@ -187,7 +192,7 @@ ax.view_init(6, 30)
 
 fig.tight_layout()
 bbox = fig.bbox_inches.from_bounds(0.12, 0.22, 5, 3.8)
-plt.savefig("../Plots/random_nohighlight_3values.png", bbox_inches=bbox, format="png")
+plt.savefig("../Plots/random_nohighlight_3values.eps", bbox_inches=bbox, format="eps")
 plt.show()
 plt.close()
 
@@ -221,7 +226,7 @@ ax.view_init(6, 30)
 
 fig.tight_layout()
 bbox = fig.bbox_inches.from_bounds(0.12, 0.22, 5, 3.8)
-plt.savefig("../Plots/ordered_highlight_3values.png", bbox_inches=bbox, format="png")
+plt.savefig("../Plots/ordered_highlight_3values.eps", bbox_inches=bbox, format="eps")
 plt.show()
 plt.close()
 
@@ -255,6 +260,6 @@ ax.view_init(6, 30)
 
 fig.tight_layout()
 bbox = fig.bbox_inches.from_bounds(0.12, 0.22, 5, 3.8)
-plt.savefig("../Plots/ordered_nohighlight_3values.png", bbox_inches=bbox, format="png")
+plt.savefig("../Plots/ordered_nohighlight_3values.eps", bbox_inches=bbox, format="eps")
 plt.show()
 plt.close()

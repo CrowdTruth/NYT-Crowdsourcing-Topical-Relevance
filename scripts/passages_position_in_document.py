@@ -129,6 +129,9 @@ r20_r = compute_F1_score_relevant_binary(random_highlight_20)
 rel = [r1_r, r2_r, r3_r, r4_r, r5_r, r6_r, r7_r, r8_r, r9_r, r10_r, r11_r, r12_r, r13_r, r14_r, r15_r, r16_r, r17_r, r18_r, r19_r, r20_r]
 notrel = [r1_nr, r2_nr, r3_nr, r4_nr, r5_nr, r6_nr, r7_nr, r8_nr, r9_nr, r10_nr, r11_nr, r12_nr, r13_nr, r14_nr, r15_nr, r16_nr, r17_nr, r18_nr, r19_nr, r20_nr]
 
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
 print(rel)
 expert_nr = 0.79
 expert_r = 0.80
@@ -321,6 +324,10 @@ hrel = [r1_hr, r2_hr, r3_hr, r4_hr, r5_hr, r6_hr, r7_hr, r8_hr, r9_hr, r10_hr, r
 expert_nr = 0.79
 expert_r = 0.45
 expert_hr = 0.57
+
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
 cols = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13', 'p14', 'p15', 'p16', 'p17', 'p18', 'p19', 'p20']
 xticks = [1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 plt.rcParams['figure.figsize'] = 6, 4

@@ -10,6 +10,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
 
 F1_3w = pd.read_csv("../Results/Pilot_2P-RndPar-High/F1_3.csv")
 F1_4w = pd.read_csv("../Results/Pilot_2P-RndPar-High/F1_4.csv")
@@ -85,6 +87,7 @@ plt.ylim(0.0, 1.0)
 leg = plt.legend(fontsize=10)
 leg.get_frame().set_alpha(0.5)
 plt.grid(ls=':')
+plt.tight_layout()
 plt.savefig("../Plots/ternary_no_of_workers.eps", format='eps', dpi=1000)
 plt.show()
 plt.close()
@@ -104,5 +107,6 @@ plt.xticks( range(3,16) , fontsize=16)
 plt.ylim(0.0, 1.0)
 leg = plt.legend(fontsize=14)
 leg.get_frame().set_alpha(0.5)
+plt.tight_layout()
 plt.grid(ls=':')
 plt.savefig("../Plots/binary_no_of_workers.eps", format='eps', dpi=1000)

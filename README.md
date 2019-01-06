@@ -1,5 +1,7 @@
 # NYTimes Corpus: Crowdsourcing Topical Relevance
 
+[![DOI](https://zenodo.org/badge/145406620.svg)](https://zenodo.org/badge/latestdoi/145406620)
+
 This repository contains the crowdsourcing annotations for topical relevance referenced in the following paper:
 
 * Oana Inel, Giannis Haralabopoulos, Dan Li, Christophe Van Gysel, Zoltán Szlávik, Elena Simperl, Evangelos Kanoulas and Lora Aroyo: **[Studying Topical Relevance with Evidence-based Crowdsourcing](https:...)**. [CIKM 2018](http://www.cikm2018.units.it).
